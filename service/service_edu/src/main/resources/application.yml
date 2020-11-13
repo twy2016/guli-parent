@@ -19,7 +19,18 @@ spring:
       maximum-pool-size: 12
       minimum-idle: 10
       pool-name: GuliHikariPool
+  jackson:
+    #时区，默认为格林尼治时间，即少8小时，所以我们需要+8
+    time-zone: GMT+8
+    #时间格式转换定义
+    date-format: yyyy-MM-dd HH:mm:ss
 mybatis-plus:
   mapper-locations: classpath:/mapper/*.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 日志级别配置
+logging:
+  level:
+    com.hy: WARN
+  file:
+    path: ././log
