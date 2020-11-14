@@ -9,6 +9,7 @@ import com.twy.commonutils.R;
 import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduTeacherService;
 import com.twy.eduservice.vo.TeacherVO;
+import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,6 +26,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/eduservice/teacher")
 @AllArgsConstructor
+@Api(value = "讲师管理模块",tags = "讲师管理模块")
 public class EduTeacherController {
 
     private final EduTeacherService eduTeacherService;
