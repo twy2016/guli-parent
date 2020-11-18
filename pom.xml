@@ -5,7 +5,6 @@
     <modules>
         <module>service</module>
         <module>common</module>
-        <module>aliyun_oss</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,10 +13,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>guli_parent</artifactId>
+    <artifactId>guli-parent</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>guli_parent</name>
+    <name>guli-parent</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

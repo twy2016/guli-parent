@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>guli_parent</artifactId>
+        <artifactId>guli-parent</artifactId>
         <groupId>com.twy</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <packaging>pom</packaging>
     <modules>
-        <module>service_edu</module>
-        <module>service_oss</module>
+        <module>service-edu</module>
+        <module>service-oss</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 
@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.twy</groupId>
-            <artifactId>service_base</artifactId>
+            <artifactId>service-base</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 <!--        <dependency>-->

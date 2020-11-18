@@ -31,6 +31,6 @@ mybatis-plus:
 # 日志级别配置
 logging:
   level:
-    com.hy: WARN
+    com.twy: WARN
   file:
     path: ././log
