@@ -1,12 +1,10 @@
-package com.twy.commonutils;
+package com.twy.oss.commonutils;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author gongpeng

@@ -1,6 +1,6 @@
-package com.twy.servicebase.handler;
+package com.twy.oss.servicebase.handler;
 
-import com.twy.commonutils.R;
+import com.twy.oss.commonutils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
