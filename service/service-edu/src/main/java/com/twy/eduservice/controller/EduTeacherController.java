@@ -27,6 +27,7 @@ import java.util.List;
 @RequestMapping("/eduservice/teacher")
 @AllArgsConstructor
 @Api(value = "讲师管理模块",tags = "讲师管理模块")
+@CrossOrigin
 public class EduTeacherController {
 
     private final EduTeacherService eduTeacherService;
@@ -68,6 +69,7 @@ public class EduTeacherController {
         if (StrUtil.isNotEmpty(end)) {
             query.le("gmt_create", end);
         }
+        query.orderByDesc("gmt_create");
         Page result = eduTeacherService.page(page, query);
         return R.ok(result);
     }
