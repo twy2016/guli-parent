@@ -7,6 +7,6 @@ spring:
     active: dev
 oss:
   endpoint: oss-cn-hangzhou.aliyuncs.com
-  accessKeyId: TFRBSTRHRW9FamVpR0FZcTFLdkRRYVFC
-  accessKeySecret: VXR0QlREZm4yUmw4ajBUZXE5WFJISTZ6RTU0eWxz
+  accessKeyId: LTAI4GEoEjeiGAYq1KvDQaQB
+  accessKeySecret: UttBTDfn2Rl8j0Teq9XRHI6zE54yls
   bucketName: guli-twy

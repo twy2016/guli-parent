@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twy.eduservice.vo.TeacherVO;
-import com.twy.oss.commonutils.R;
+import com.twy.commonutils.R;
 import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduTeacherService;
 import io.swagger.annotations.Api;

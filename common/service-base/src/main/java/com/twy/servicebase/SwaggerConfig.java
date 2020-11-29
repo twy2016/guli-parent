@@ -1,4 +1,4 @@
-package com.twy.oss.servicebase;
+package com.twy.servicebase;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

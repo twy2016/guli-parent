@@ -1,4 +1,4 @@
-package com.twy.oss.commonutils;
+package com.twy.commonutils;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

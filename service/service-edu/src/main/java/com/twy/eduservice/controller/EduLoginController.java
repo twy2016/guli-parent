@@ -1,6 +1,6 @@
 package com.twy.eduservice.controller;
 
-import com.twy.oss.commonutils.R;
+import com.twy.commonutils.R;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 

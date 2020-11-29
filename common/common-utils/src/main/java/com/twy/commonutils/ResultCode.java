@@ -1,4 +1,4 @@
-package com.twy.oss.commonutils;
+package com.twy.commonutils;
 
 /**
  * @author gongpeng

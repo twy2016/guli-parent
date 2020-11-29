@@ -1,14 +1,217 @@
-2020-11-15 11:09:28.474  INFO 1704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-15 11:09:28.568  INFO 1704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-11-15 11:09:28.815  INFO 1704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 0 Redis repository interfaces.
-2020-11-15 11:09:30.345  INFO 1704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-11-15 11:09:30.386  INFO 1704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-15 11:09:30.389  INFO 1704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-15 11:09:30.596  INFO 1704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-15 11:09:30.597  INFO 1704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5589 ms
-2020-11-15 11:09:33.417  INFO 1704 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-15 11:09:33.705  INFO 1704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-15 11:09:35.684  INFO 1704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2020-11-15 11:09:35.685  INFO 1704 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-15 11:09:35.735  INFO 1704 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-15 11:09:35.838  INFO 1704 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 15:07:54.783  INFO 8284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 15:07:55.124  INFO 8284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 15:07:55.239  INFO 8284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2020-11-29 15:07:56.725  INFO 8284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 15:07:56.736  INFO 8284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 15:07:56.738  INFO 8284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 15:07:57.148  INFO 8284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 15:07:57.148  INFO 8284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5565 ms
+2020-11-29 15:08:00.160  INFO 8284 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 15:08:00.506  INFO 8284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 15:08:02.720  INFO 8284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 15:08:02.723  INFO 8284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 15:08:02.771  INFO 8284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 15:08:02.873  INFO 8284 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 15:08:40.685  INFO 13644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 15:08:40.690  INFO 13644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 15:08:40.725  INFO 13644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-11-29 15:08:41.319  INFO 13644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 15:08:41.331  INFO 13644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 15:08:41.332  INFO 13644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 15:08:41.483  INFO 13644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 15:08:41.483  INFO 13644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2147 ms
+2020-11-29 15:08:42.886  INFO 13644 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 15:08:42.980  INFO 13644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 15:08:43.474  INFO 13644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 15:08:43.475  INFO 13644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 15:08:43.490  INFO 13644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 15:08:43.560  INFO 13644 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 15:11:23.318  INFO 13644 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 15:11:23.318  INFO 13644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 15:11:23.341  INFO 13644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-11-29 15:32:46.306  INFO 1372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 15:32:46.320  INFO 1372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 15:32:46.419  INFO 1372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 0 Redis repository interfaces.
+2020-11-29 15:32:47.966  INFO 1372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 15:32:48.007  INFO 1372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 15:32:48.007  INFO 1372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 15:32:48.583  INFO 1372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 15:32:48.584  INFO 1372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4776 ms
+2020-11-29 15:32:51.300  INFO 1372 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 15:32:51.497  INFO 1372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 15:32:52.721  INFO 1372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 15:32:52.723  INFO 1372 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 15:32:52.761  INFO 1372 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 15:32:52.863  INFO 1372 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 15:37:50.131  INFO 1372 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 15:37:50.132  INFO 1372 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 15:37:50.140  INFO 1372 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-29 15:38:39.808  INFO 1372 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 15:38:42.586  INFO 1372 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
+2020-11-29 15:38:44.028 ERROR 1372 --- [http-nio-8081-exec-3] c.t.o.s.handler.GlobalExceptionHandler   : 
+### Error updating database.  Cause: java.sql.SQLException: Field 'name' doesn't have a default value
+### The error may exist in com/twy/eduservice/mapper/EduTeacherMapper.java (best guess)
+### The error may involve com.twy.eduservice.mapper.EduTeacherMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_teacher  ( id,        gmt_create, gmt_modified )  VALUES  ( ?,        ?, ? )
+### Cause: java.sql.SQLException: Field 'name' doesn't have a default value
+; Field 'name' doesn't have a default value; nested exception is java.sql.SQLException: Field 'name' doesn't have a default value
+2020-11-29 17:34:25.948  INFO 2844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 17:34:25.973  INFO 2844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 17:34:26.071  INFO 2844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-11-29 17:34:28.364  INFO 2844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 17:34:28.418  INFO 2844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 17:34:28.420  INFO 2844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 17:34:28.692  INFO 2844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 17:34:28.692  INFO 2844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5793 ms
+2020-11-29 17:34:31.811  INFO 2844 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 17:34:31.913  INFO 2844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 17:34:34.290  INFO 2844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 17:34:34.292  INFO 2844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 17:34:34.352  INFO 2844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 17:34:34.439  INFO 2844 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 17:35:29.926  INFO 2844 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 17:35:29.926  INFO 2844 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 17:35:29.938  INFO 2844 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-11-29 17:35:33.765  INFO 2844 --- [http-nio-8081-exec-6] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 17:35:34.524  INFO 2844 --- [http-nio-8081-exec-6] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
+2020-11-29 20:30:09.331  INFO 15560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 20:30:09.433  INFO 15560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 20:30:09.632  INFO 15560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 0 Redis repository interfaces.
+2020-11-29 20:30:12.043  INFO 15560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 20:30:12.055  INFO 15560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 20:30:12.055  INFO 15560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 20:30:12.221  INFO 15560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 20:30:12.221  INFO 15560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5586 ms
+2020-11-29 20:30:15.439  INFO 15560 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 20:30:15.789  INFO 15560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 20:30:17.020  INFO 15560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 20:30:17.022  INFO 15560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 20:30:17.059  INFO 15560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 20:30:17.117  INFO 15560 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 20:30:30.301  INFO 15560 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 20:30:30.302  INFO 15560 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 20:30:30.311  INFO 15560 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-29 20:34:46.240  INFO 18556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 20:34:46.245  INFO 18556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 20:34:46.292  INFO 18556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-29 20:34:49.191  INFO 18556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 20:34:49.202  INFO 18556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 20:34:49.203  INFO 18556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 20:34:49.749  INFO 18556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 20:34:49.749  INFO 18556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4840 ms
+2020-11-29 20:34:51.665  INFO 18556 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 20:34:51.767  INFO 18556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 20:34:52.310  INFO 18556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 20:34:52.311  INFO 18556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 20:34:52.345  INFO 18556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 20:34:52.432  INFO 18556 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 20:34:59.788  INFO 18556 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 20:34:59.789  INFO 18556 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 20:34:59.800  INFO 18556 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-11-29 20:38:01.983  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 20:38:01.987  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 20:38:02.022  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-11-29 20:38:02.560  INFO 16356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 20:38:02.572  INFO 16356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 20:38:02.572  INFO 16356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 20:38:02.695  INFO 16356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 20:38:02.695  INFO 16356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1720 ms
+2020-11-29 20:38:04.079  INFO 16356 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 20:38:04.177  INFO 16356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 20:38:04.658  INFO 16356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 20:38:04.659  INFO 16356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 20:38:04.673  INFO 16356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 20:38:04.717  INFO 16356 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 20:40:09.167  INFO 16356 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 20:40:09.168  INFO 16356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 20:40:09.180  INFO 16356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-11-29 20:40:17.972  INFO 16356 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 20:40:18.770  INFO 16356 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
+2020-11-29 20:40:19.903 ERROR 16356 --- [http-nio-8081-exec-3] c.t.s.handler.GlobalExceptionHandler     : 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'id' at row 1
+### The error may exist in com/twy/eduservice/mapper/EduSubjectMapper.java (best guess)
+### The error may involve com.twy.eduservice.mapper.EduSubjectMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_subject  ( id, title, parent_id )  VALUES  ( ?, ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'id' at row 1
+; Data truncation: Data too long for column 'id' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'id' at row 1
+2020-11-29 20:42:20.044  INFO 16360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 20:42:20.049  INFO 16360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 20:42:20.085  INFO 16360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-11-29 20:42:20.686  INFO 16360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 20:42:20.697  INFO 16360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 20:42:20.697  INFO 16360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 20:42:20.821  INFO 16360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 20:42:20.822  INFO 16360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1812 ms
+2020-11-29 20:42:22.248  INFO 16360 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 20:42:22.348  INFO 16360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 20:42:22.853  INFO 16360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 20:42:22.854  INFO 16360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 20:42:22.873  INFO 16360 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 20:42:22.923  INFO 16360 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 20:42:55.479  INFO 16360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 20:42:55.480  INFO 16360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 20:42:55.507  INFO 16360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-11-29 20:42:56.019  INFO 16360 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 20:42:56.325  INFO 16360 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
+2020-11-29 20:42:56.790 ERROR 16360 --- [http-nio-8081-exec-1] c.t.s.handler.GlobalExceptionHandler     : 
+### Error updating database.  Cause: java.sql.SQLException: Field 'gmt_create' doesn't have a default value
+### The error may exist in com/twy/eduservice/mapper/EduSubjectMapper.java (best guess)
+### The error may involve com.twy.eduservice.mapper.EduSubjectMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_subject  ( id, title, parent_id )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'gmt_create' doesn't have a default value
+; Field 'gmt_create' doesn't have a default value; nested exception is java.sql.SQLException: Field 'gmt_create' doesn't have a default value
+2020-11-29 20:44:49.341  INFO 17128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 20:44:49.345  INFO 17128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 20:44:49.382  INFO 17128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-11-29 20:44:49.905  INFO 17128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 20:44:49.916  INFO 17128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 20:44:49.916  INFO 17128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 20:44:50.039  INFO 17128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 20:44:50.039  INFO 17128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2020-11-29 20:44:51.418  INFO 17128 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 20:44:51.520  INFO 17128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 20:44:52.018  INFO 17128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 20:44:52.019  INFO 17128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 20:44:52.034  INFO 17128 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 20:44:52.077  INFO 17128 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 20:48:27.153  INFO 17128 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 20:48:27.153  INFO 17128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 20:48:27.163  INFO 17128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-11-29 20:48:33.311  INFO 17128 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 20:48:33.550  INFO 17128 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
+2020-11-29 21:07:04.573  INFO 10608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 21:07:04.577  INFO 10608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 21:07:04.623  INFO 10608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-11-29 21:07:05.956  INFO 10608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 21:07:05.968  INFO 10608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 21:07:05.968  INFO 10608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 21:07:06.180  INFO 10608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 21:07:06.181  INFO 10608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2866 ms
+2020-11-29 21:07:09.018  INFO 10608 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 21:07:09.156  INFO 10608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 21:07:09.805  INFO 10608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 21:07:09.806  INFO 10608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 21:07:09.888  INFO 10608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 21:07:09.972  INFO 10608 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 21:08:28.403  INFO 7732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 21:08:28.412  INFO 7732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 21:08:28.457  INFO 7732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-11-29 21:08:31.218  INFO 7732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-29 21:08:31.232  INFO 7732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-29 21:08:31.232  INFO 7732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 21:08:31.588  INFO 7732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-29 21:08:31.589  INFO 7732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4452 ms
+2020-11-29 21:08:33.338  INFO 7732 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 21:08:33.442  INFO 7732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 21:08:34.063  INFO 7732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-29 21:08:34.064  INFO 7732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-29 21:08:34.081  INFO 7732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-29 21:08:34.140  INFO 7732 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-29 21:09:31.962  INFO 7732 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 21:09:31.965  INFO 7732 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-29 21:09:31.982  INFO 7732 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-29 21:09:32.343  INFO 7732 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Starting...
+2020-11-29 21:09:33.140  INFO 7732 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : GuliHikariPool - Start completed.
