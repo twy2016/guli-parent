@@ -35,7 +35,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         course.setStatus(EduCourse.COURSE_DRAFT);
         boolean resultCourseInfo = this.save(course);
         if (!resultCourseInfo) {
-            throw new GuliException(20001, "课程信息保存失败");
+            throw new GuliException("课程信息保存失败");
         }
         //保存课程详情信息
         EduCourseDescription courseDescription = new EduCourseDescription();
@@ -43,7 +43,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         courseDescription.setId(course.getId());
         boolean resultDescription = eduCourseDescriptionService.save(courseDescription);
         if(!resultDescription){
-            throw new GuliException(20001, "课程详情信息保存失败");
+            throw new GuliException("课程详情信息保存失败");
         }
         return course.getId();
     }

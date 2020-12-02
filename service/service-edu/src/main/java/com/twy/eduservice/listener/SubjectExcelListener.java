@@ -27,7 +27,7 @@ public class SubjectExcelListener extends AnalysisEventListener<ExcelSubjectData
     @Override
     public void invoke(ExcelSubjectData data, AnalysisContext analysisContext) {
         if (data == null) {
-            throw new GuliException(20001, "添加失败");
+            throw new GuliException("添加失败");
         }
         //添加一级分类
         EduSubject existOneSubject = this.existOneSubject(eduSubjectService, data.getOneSubjectName());

@@ -37,7 +37,7 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
             EasyExcel.read(inputStream, ExcelSubjectData.class, new SubjectExcelListener(eduSubjectService)).sheet().doRead();
         } catch (IOException e) {
             e.printStackTrace();
-            throw new GuliException(20002, "添加课程分类失败");
+            throw new GuliException("添加课程分类失败");
         }
     }
 
