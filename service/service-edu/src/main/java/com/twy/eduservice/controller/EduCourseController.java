@@ -26,11 +26,20 @@ public class EduCourseController {
 
     @PostMapping
     public R addCourse(@RequestBody EduCourseDTO eduCourseDTO) {
-        eduCourseDTO.setTeacherId("1189426464967995393");
-        eduCourseDTO.setSubjectId("1178214681118568449");
-        eduCourseDTO.setSubjectParentId("1178214681139539969");
         String courseId = eduCourseService.addCourse(eduCourseDTO);
         return StrUtil.isNotEmpty(courseId) ? R.ok(courseId) : R.error(false);
+    }
+
+    @PutMapping
+    public R updateCourse(@RequestBody EduCourseDTO eduCourseDTO) {
+        boolean result = eduCourseService.updateCourse(eduCourseDTO);
+        return result ? R.ok(true) : R.error(false);
+    }
+
+    @GetMapping("/{id}")
+    public R getCourseInfoById(@PathVariable("id") String id) {
+        EduCourseDTO info = eduCourseService.getCourseInfoById(id);
+        return R.ok(info);
     }
 }
 

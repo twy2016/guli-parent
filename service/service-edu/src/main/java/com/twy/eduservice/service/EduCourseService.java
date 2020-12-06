@@ -21,4 +21,19 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     String addCourse(EduCourseDTO eduCourseDTO);
+
+    /**
+     * 根据Id获取课程详情
+     * @param id
+     * @return
+     */
+    EduCourseDTO getCourseInfoById(String id);
+
+    /**
+     * 修改课程信息
+     *
+     * @param eduCourseDTO
+     * @return
+     */
+    boolean updateCourse(EduCourseDTO eduCourseDTO);
 }

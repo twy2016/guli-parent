@@ -10,6 +10,7 @@ import com.aliyun.oss.OSSException;
 import com.aliyun.oss.model.OSSObject;
 import com.twy.oss.service.OssService;
 import com.twy.oss.util.Constant;
+import com.twy.servicebase.exception.GuliException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -39,6 +40,7 @@ public class OssServiceImpl implements OssService {
             uploadUrl = "http://" + Constant.bucketName + "." + Constant.endpoint + "/" + newName;
         } catch (Exception e) {
             e.printStackTrace();
+            throw new GuliException("文件上失败");
         } finally {
             client.shutdown();
         }

@@ -2,6 +2,7 @@ package com.twy.oss.controller;
 
 import com.twy.commonutils.R;
 import com.twy.oss.service.OssService;
+import com.twy.servicebase.exception.GuliException;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,10 @@ public class OssController {
     private final OssService ossService;
 
     @PostMapping
-    public R upload(MultipartFile file){
+    public R upload(MultipartFile file) {
+        if (file == null) {
+            throw new GuliException("文件为空");
+        }
         String url = ossService.uploadFile(file);
         return R.ok(url);
     }
