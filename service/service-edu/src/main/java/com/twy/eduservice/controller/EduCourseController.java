@@ -2,10 +2,17 @@ package com.twy.eduservice.controller;
 
 
 import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twy.commonutils.R;
 import com.twy.eduservice.dto.EduCourseDTO;
 import com.twy.eduservice.entity.EduCourse;
+import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduCourseService;
+import com.twy.eduservice.vo.CoursePublishVo;
+import com.twy.eduservice.vo.CourseVo;
+import io.swagger.annotations.ApiParam;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,6 +47,48 @@ public class EduCourseController {
     public R getCourseInfoById(@PathVariable("id") String id) {
         EduCourseDTO info = eduCourseService.getCourseInfoById(id);
         return R.ok(info);
+    }
+
+    @DeleteMapping("/{id}")
+    public R removeById(@PathVariable("id") String id) {
+        boolean result = eduCourseService.removeCourseById(id);
+        return R.ok(result);
+    }
+
+    @GetMapping("/publish/{id}")
+    public R getCoursePublishVoById(@PathVariable("id") String id) {
+        CoursePublishVo info = eduCourseService.getCoursePublishVoById(id);
+        return R.ok(info);
+    }
+
+    @PutMapping("/publish/{id}")
+    public R publishCourseById(@PathVariable String id) {
+        eduCourseService.publishCourseById(id);
+        return R.ok();
+    }
+
+    @GetMapping("/page")
+    public R<Page<EduCourse>> pageQuery(Page page, CourseVo courseVo) {
+        QueryWrapper<EduCourse> query = new QueryWrapper<>();
+        String title = courseVo.getTitle();
+        String teacherId = courseVo.getTeacherId();
+        String subjectParentId = courseVo.getSubjectParentId();
+        String subjectId = courseVo.getSubjectId();
+        if (!StrUtil.isEmpty(title)) {
+            query.like("title", title);
+        }
+        if (!StrUtil.isEmpty(teacherId)) {
+            query.eq("teacher_id", teacherId);
+        }
+        if (!StrUtil.isEmpty(subjectParentId)) {
+            query.eq("subject_parent_id", subjectParentId);
+        }
+        if (!StrUtil.isEmpty(subjectId)) {
+            query.eq("subject_id", subjectId);
+        }
+        query.orderByDesc("gmt_create");
+        Page<EduCourse> result = eduCourseService.page(page, query);
+        return R.ok(result);
     }
 }
 

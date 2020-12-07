@@ -1,17 +1,27 @@
 package com.twy.eduservice.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.twy.eduservice.dto.EduCourseDTO;
+import com.twy.eduservice.entity.EduChapter;
 import com.twy.eduservice.entity.EduCourse;
 import com.twy.eduservice.entity.EduCourseDescription;
+import com.twy.eduservice.entity.EduVideo;
+import com.twy.eduservice.mapper.EduChapterMapper;
 import com.twy.eduservice.mapper.EduCourseMapper;
+import com.twy.eduservice.mapper.EduVideoMapper;
+import com.twy.eduservice.service.EduChapterService;
 import com.twy.eduservice.service.EduCourseDescriptionService;
 import com.twy.eduservice.service.EduCourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.twy.eduservice.service.EduVideoService;
+import com.twy.eduservice.vo.CoursePublishVo;
 import com.twy.servicebase.exception.GuliException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -24,8 +34,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService {
 
-    @Autowired
+    @Resource
     private EduCourseDescriptionService eduCourseDescriptionService;
+    @Resource
+    private EduCourseMapper courseMapper;
+    @Resource
+    private EduVideoService eduVideoService;
+    @Resource
+    private EduChapterService eduChapterService;
 
     @Override
     public String addCourse(EduCourseDTO eduCourseDTO) {
@@ -93,5 +109,27 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             throw new GuliException("课程详情信息保存失败");
         }
         return true;
+    }
+
+    @Override
+    public CoursePublishVo getCoursePublishVoById(String id) {
+        return courseMapper.selectCoursePublishVoById(id);
+    }
+
+    @Override
+    public boolean publishCourseById(String id) {
+        EduCourse course = new EduCourse();
+        course.setId(id);
+        course.setStatus(EduCourse.COURSE_NORMAL);
+        boolean result = this.updateById(course);
+        return result;
+    }
+
+    @Override
+    public boolean removeCourseById(String id) {
+        boolean flag = this.removeById(id);
+        boolean flag2 = eduVideoService.remove(Wrappers.<EduVideo>lambdaQuery().eq(EduVideo::getCourseId, id));
+        boolean flag3 = eduChapterService.remove(Wrappers.<EduChapter>lambdaQuery().eq(EduChapter::getCourseId, id));
+        return flag && flag2 && flag3;
     }
 }

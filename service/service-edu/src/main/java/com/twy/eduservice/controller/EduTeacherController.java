@@ -51,7 +51,7 @@ public class EduTeacherController {
 
     @GetMapping("/pageTeacherByCondition")
     public R<IPage<EduTeacher>> pageByCondition(Page page, TeacherVO vo) {
-        QueryWrapper query = new QueryWrapper();
+        QueryWrapper<EduTeacher> query = new QueryWrapper<>();
         String name = vo.getName();
         Integer level = vo.getLevel();
         String begin = vo.getBegin();
@@ -69,7 +69,7 @@ public class EduTeacherController {
             query.le("gmt_create", end);
         }
         query.orderByDesc("gmt_create");
-        Page result = eduTeacherService.page(page, query);
+        Page<EduTeacher> result = eduTeacherService.page(page, query);
         return R.ok(result);
     }
 

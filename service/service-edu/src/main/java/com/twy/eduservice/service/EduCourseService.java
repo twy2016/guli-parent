@@ -3,6 +3,7 @@ package com.twy.eduservice.service;
 import com.twy.eduservice.dto.EduCourseDTO;
 import com.twy.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.twy.eduservice.vo.CoursePublishVo;
 
 /**
  * <p>
@@ -36,4 +37,10 @@ public interface EduCourseService extends IService<EduCourse> {
      * @return
      */
     boolean updateCourse(EduCourseDTO eduCourseDTO);
+
+    CoursePublishVo getCoursePublishVoById(String id);
+
+    boolean publishCourseById(String id);
+
+    boolean removeCourseById(String id);
 }
