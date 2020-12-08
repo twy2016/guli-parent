@@ -24,6 +24,10 @@ spring:
     time-zone: GMT+8
     #时间格式转换定义
     date-format: yyyy-MM-dd HH:mm:ss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 mybatis-plus:
   mapper-locations: classpath:/mapper/*.xml
   configuration:
@@ -34,3 +38,13 @@ logging:
     com.twy: WARN
   file:
     path: ././log
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000 # 设置hystrix的超时时间为5000ms

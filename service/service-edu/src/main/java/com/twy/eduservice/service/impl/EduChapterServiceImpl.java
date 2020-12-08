@@ -71,7 +71,6 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
         if (videoService.getCountByChapterId(id)) {
             throw new GuliException("该分章节下存在视频课程，请先删除视频课程");
         }
-
         boolean result = this.removeById(id);
         return result;
     }

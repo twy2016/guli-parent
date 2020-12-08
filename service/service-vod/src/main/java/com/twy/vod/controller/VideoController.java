@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 /**
  * @author gongpeng
  * @date 2020/12/7 23:06
@@ -30,4 +32,16 @@ public class VideoController {
         videoService.removeVideo(videoId);
         return R.ok();
     }
+
+    /**
+     * 批量删除视频
+     * @param videoIdList
+     * @return
+     */
+    @DeleteMapping
+    public R removeVideoList(@RequestParam("videoIdList") List<String> videoIdList){
+        videoService.removeVideoList(videoIdList);
+        return R.ok();
+    }
+
 }

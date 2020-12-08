@@ -128,7 +128,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     @Override
     public boolean removeCourseById(String id) {
         boolean flag = this.removeById(id);
-        boolean flag2 = eduVideoService.remove(Wrappers.<EduVideo>lambdaQuery().eq(EduVideo::getCourseId, id));
+        boolean flag2 = eduVideoService.removeByCourseId(id);
         boolean flag3 = eduChapterService.remove(Wrappers.<EduChapter>lambdaQuery().eq(EduChapter::getCourseId, id));
         return flag && flag2 && flag3;
     }
