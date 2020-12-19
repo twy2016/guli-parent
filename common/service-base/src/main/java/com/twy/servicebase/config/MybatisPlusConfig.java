@@ -1,4 +1,4 @@
-package com.twy.eduservice.config;
+package com.twy.servicebase.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
