@@ -5,7 +5,6 @@ import com.twy.commonutils.R;
 import com.twy.eduservice.entity.EduChapter;
 import com.twy.eduservice.service.EduChapterService;
 import com.twy.eduservice.vo.ChapterVo;
-import io.swagger.annotations.ApiParam;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/eduservice/chapter")
 @AllArgsConstructor
-@CrossOrigin
+//@CrossOrigin
 public class EduChapterController {
     private final EduChapterService chapterService;
 

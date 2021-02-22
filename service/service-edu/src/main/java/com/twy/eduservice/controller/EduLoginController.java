@@ -2,7 +2,10 @@ package com.twy.eduservice.controller;
 
 import com.twy.commonutils.R;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +17,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/eduservice/user")
 @Api(value = "登录模块",tags = "登录模块")
-@CrossOrigin
+//@CrossOrigin
 public class EduLoginController {
 
     @PostMapping("/login")

@@ -1,11 +1,10 @@
 package com.twy.ucenter.controller;
 
-import com.twy.ucenter.util.JwtUtils;
 import com.twy.commonutils.R;
 import com.twy.ucenter.entity.Member;
 import com.twy.ucenter.service.MemberService;
+import com.twy.ucenter.util.JwtUtils;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/ucenter/auth")
-@CrossOrigin
+//@CrossOrigin
 public class MemberApiController {
 
     private final MemberService memberService;

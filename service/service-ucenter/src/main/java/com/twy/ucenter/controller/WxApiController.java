@@ -3,14 +3,13 @@ package com.twy.ucenter.controller;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.twy.ucenter.util.JwtUtils;
 import com.twy.servicebase.exception.GuliException;
 import com.twy.ucenter.entity.Member;
 import com.twy.ucenter.service.MemberService;
 import com.twy.ucenter.util.ConstantPropertiesUtil;
+import com.twy.ucenter.util.JwtUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -23,7 +22,7 @@ import java.util.HashMap;
  * @author gongpeng
  * @date 2020/12/19 23:23
  */
-@CrossOrigin
+//@CrossOrigin
 @Controller
 @RequestMapping("/api/ucenter/wx")
 @AllArgsConstructor

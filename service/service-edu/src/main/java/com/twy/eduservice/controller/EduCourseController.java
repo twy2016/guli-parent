@@ -3,16 +3,13 @@ package com.twy.eduservice.controller;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twy.commonutils.R;
 import com.twy.eduservice.dto.EduCourseDTO;
 import com.twy.eduservice.entity.EduCourse;
-import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduCourseService;
 import com.twy.eduservice.vo.CoursePublishVo;
 import com.twy.eduservice.vo.CourseVo;
-import io.swagger.annotations.ApiParam;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/eduservice/course")
-@CrossOrigin
+//@CrossOrigin
 @AllArgsConstructor
 public class EduCourseController {
     private final EduCourseService eduCourseService;

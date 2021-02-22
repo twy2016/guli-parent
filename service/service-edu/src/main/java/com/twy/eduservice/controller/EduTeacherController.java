@@ -4,10 +4,10 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.twy.eduservice.vo.TeacherVO;
 import com.twy.commonutils.R;
 import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduTeacherService;
+import com.twy.eduservice.vo.TeacherVO;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,7 @@ import java.util.List;
 @RequestMapping("/eduservice/teacher")
 @AllArgsConstructor
 @Api(value = "讲师管理模块",tags = "讲师管理模块")
-@CrossOrigin
+//@CrossOrigin
 public class EduTeacherController {
 
     private final EduTeacherService eduTeacherService;

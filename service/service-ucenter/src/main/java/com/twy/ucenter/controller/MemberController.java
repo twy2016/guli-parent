@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/ucenter/member")
 @AllArgsConstructor
-@CrossOrigin
+//@CrossOrigin
 public class MemberController {
 
     private final MemberService memberService;

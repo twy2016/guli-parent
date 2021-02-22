@@ -2,7 +2,6 @@ package com.twy.eduservice.controller;
 
 
 import com.twy.commonutils.R;
-import com.twy.eduservice.entity.EduChapter;
 import com.twy.eduservice.entity.EduVideo;
 import com.twy.eduservice.service.EduVideoService;
 import lombok.AllArgsConstructor;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/eduservice/video")
-@CrossOrigin
+//@CrossOrigin
 @AllArgsConstructor
 public class EduVideoController {
 

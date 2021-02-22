@@ -7,12 +7,10 @@ import com.twy.eduservice.entity.EduTeacher;
 import com.twy.eduservice.service.EduCourseService;
 import com.twy.eduservice.service.EduTeacherService;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/index")
-@CrossOrigin
+//@CrossOrigin
 @AllArgsConstructor
 public class IndexController {
 
